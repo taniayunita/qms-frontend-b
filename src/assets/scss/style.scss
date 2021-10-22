@@ -1,0 +1,243 @@
+/*!
+ * Bootstrap v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import "colorVariables";
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "container-grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "utilities";
+@import "print";
+
+* {
+    box-sizing: border-box;
+}
+.brand-text-icon{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color: $primary;
+
+    &:hover{
+        color: $primary;
+        text-decoration: none;
+    }
+
+    span{
+        color: $orange;
+    }
+}
+
+header{
+    border-bottom: 1px solid $gray-200;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    
+
+    .navbar{
+        padding-bottom: 20px;
+
+        ul.navbar-nav{
+            li.nav-item{
+                text-align: end;
+                &.active{
+                    a.nav-link{
+                        color: $orange;
+                    }
+                }
+                a{
+                    &.nav-link{
+                        font-family: "Poppins",sans-serif;
+                        letter-spacing: 1.25px;
+                        color: $gray-900;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+
+                        &:hover{
+                            // text-decoration: underline;
+                            // font-weight: bold;
+                            color: $orange;
+                            border-bottom: 3px solid $orange;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+section{
+    margin-bottom: 70px;
+}
+.tsparticles-canvas-el{
+    position : absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+.auth{
+    background-image: url('../../assets/images/login-register-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    min-height: 100vh;
+    margin-bottom: -70px;
+    padding-top: 180px;
+    .card-shadow{
+        box-shadow: -8px 12px 18px 0 $gray-400;
+    }
+}
+.bank-details{
+    p{
+        padding-bottom: 24px;
+    }
+    @media screen and (max-width: 1204px) {
+        img{
+            display: none;
+        }
+      }
+}
+
+
+footer{
+    border-top: 1px solid $gray-200;
+    padding-top: 50px;
+
+    .brand-tagLine{
+        margin-top: 8px;
+        color: $gray-500;
+        font-weight: 300;
+    }
+
+    .list-group-item{
+        padding: 0.3125rem 0;
+        border: 0;
+        
+        a, span{
+            color: $gray-500;
+            font-weight: 300;
+        }
+        a{
+            @include hover-focus{
+                color: $gray-800;
+            }
+        }
+    }
+
+    .copyrights {
+        margin: 50px 0;
+        font-weight: 300;
+        color: $gray-500;
+    }
+}
+
+.img-beranda {
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 550px
+}
+
+.flex-left {
+    flex: 60%;
+    margin-bottom: 20px;
+}
+.flex-right {
+    flex: 40%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 991px) {
+    .flex-container{   
+      flex-direction: column;
+      justify-content: center;
+    }
+
+   .flexo-2 {
+       order: 2;
+       text-align: center;
+    }
+   .flexo-1 {
+       order: 1;
+       text-align: center;
+
+    }
+    .img-beranda {
+        width: 300px
+    }
+}
+
+
+  
+  @media screen and (min-width: 600px) {
+    div.beranda {
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    div.beranda {
+      font-size: 30px;
+      line-height: 45px;
+
+    }
+}
+
+p > span {
+	font-weight: bold;
+    color: #F55F44;
+}
+a > span {
+	font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+
+@media (max-width: 991px) {
+    img.img-antrian {
+      display: none;
+    }
+  }

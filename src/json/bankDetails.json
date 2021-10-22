@@ -1,0 +1,22 @@
+{
+    "bankDetails": [
+        {
+          "_id": "1",
+          "bank": "KCP BRI Surabaya",
+          "alamat": "Surabaya",
+          "detail": "lihat disini" 
+        },
+        {
+            "_id": "2",
+            "bank": "KCP BRI Jakarta",
+            "alamat": "Jakarta",
+            "detail": "lihat disini" 
+          },
+          {
+            "_id": "3",
+            "bank": "KCP BRI Malang",
+            "alamat": "Malang",
+            "detail": "lihat disini" 
+          }
+      ]
+}
