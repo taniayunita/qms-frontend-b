@@ -59,7 +59,7 @@ export default class ContentAntrianBank extends Component {
                         <div className="flex-left">
                             <div className="font-weight-bold beranda">
                                 <h3 className="font-weight-bold line-height-1 mb-3">
-                                    Info Antrian Hari Ini ({currentTime})
+                                    Info Antrian Hari Ini <br /> ({currentTime})
                                 </h3>
                             </div>
                             <p
@@ -88,8 +88,8 @@ export default class ContentAntrianBank extends Component {
 
                             </p>
 
-                            <div className="d-flex flex-row justify-content-between">
-                                <div>
+                            <div className="d-flex d-lg-flex flex-column flex-lg-row justify-content-between">
+                                <div className="p-lg-0 pb-2">
                                     <Link to="/daftar-bank">
                                         <Button className="btn px-5 text-danger" >
                                             Kembali

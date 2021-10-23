@@ -31,7 +31,7 @@ export default function Header(props) {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav ml-auto">
-                <li className={`nav-item${getNavLinkClass("/")}`}>
+                <li className={`nav-item${getNavLinkClass("/beranda")}`}>
                   <Button className="nav-link" type="link" href="/beranda">
                     Beranda
                   </Button>
